@@ -30,7 +30,7 @@ bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                 ];
                 bot.commands.cookieCommand = {
             command: 'cookie',
-            rank: 'ambassador',
+            rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);

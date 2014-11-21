@@ -29,6 +29,19 @@ bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
                 ];
                 
+                bot.commands.pingCommand = {
+            command: 'ping',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    
+                }
+            }
+        };
+                
         bot.loadChat();
 
     }
